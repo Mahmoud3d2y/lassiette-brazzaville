@@ -1,0 +1,16 @@
+{
+  "name": "lassiette-brazzaville",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site officiel bilingue (FR/EN) du restaurant L'Assiette, Brazzaville. Générateur statique sans dépendance.",
+  "type": "module",
+  "scripts": {
+    "images": "node src/images.mjs",
+    "build": "node src/build.mjs",
+    "dev": "node src/build.mjs --watch & node src/serve.mjs",
+    "serve": "node src/serve.mjs",
+    "check": "node src/check.mjs"
+  },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED"
+}

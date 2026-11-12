@@ -1,0 +1,286 @@
+{
+  "lang": "en",
+  "locale": "en_GB",
+  "langName": "English",
+  "otherLangLabel": "Version française",
+  "skip": "Skip to content",
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "gallery": "Gallery",
+    "contact": "Contact & reservations",
+    "reserve": "Reserve",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "langSwitch": "Change language"
+  },
+  "pages": {
+    "home": {
+      "slug": "",
+      "title": "L'Assiette | Restaurant, lounge bar & pastry in Brazzaville",
+      "description": "L'Assiette, restaurant in Brazzaville, Congo: garden terrace, lounge bar, pastry counter and ice cream in the city centre. Open daily 7:30 am to 11:30 pm. Reserve a table."
+    },
+    "menu": {
+      "slug": "menu",
+      "title": "Menu | L'Assiette, restaurant in Brazzaville",
+      "description": "Explore the menu at L'Assiette restaurant in Brazzaville: sharing starters, mains, burgers, house-made pastry, ice cream and lounge-bar cocktails."
+    },
+    "about": {
+      "slug": "about",
+      "title": "About | L'Assiette, restaurant in Brazzaville",
+      "description": "The story and philosophy of L'Assiette, a restaurant, lounge bar, pastry counter and ice-cream parlour in the heart of Brazzaville, Republic of the Congo."
+    },
+    "gallery": {
+      "slug": "gallery",
+      "title": "Gallery | L'Assiette, restaurant in Brazzaville",
+      "description": "Photos of L'Assiette restaurant in Brazzaville: dishes, pastries, cocktails, the garden terrace and the lounge bar."
+    },
+    "contact": {
+      "slug": "contact-reservations",
+      "title": "Contact & reservations | L'Assiette Brazzaville",
+      "description": "Reserve a table at L'Assiette restaurant in Brazzaville: city-centre address, daily opening hours, phone, WhatsApp and reservation form."
+    },
+    "notFound": {
+      "slug": "404",
+      "description": "Page not found on the website of L'Assiette, restaurant, lounge bar and pastry counter in Brazzaville. Browse the menu, the gallery or reserve a table.",
+      "title": "Page not found | L'Assiette Brazzaville",
+      "heading": "This page doesn't exist.",
+      "text": "The link may be out of date. Browse the menu, the gallery, or reserve a table.",
+      "cta": "Back to home"
+    }
+  },
+  "hero": {
+    "line1": "Flavours",
+    "line2": "of life",
+    "intro": "Restaurant, lounge bar, pastry counter and ice-cream parlour in the centre of Brazzaville. A garden terrace under a pergola by day, a soft-lit lounge by night, and house-made cakes at any hour.",
+    "ctaMenu": "Explore the menu",
+    "ctaReserve": "Reserve a table",
+    "open": "Open every day",
+    "hoursShort": "7:30 am – 11:30 pm",
+    "where": "City centre, Brazzaville",
+    "kicker": "Restaurant, lounge bar, pastry & ice cream in the heart of Brazzaville",
+    "scroll": "Discover",
+    "sub": "A house that opens onto a garden, from the first coffee of the morning to the last cocktail of the night."
+  },
+  "intro": {
+    "heading": "One address, four ways to meet",
+    "text": "Coffee and a croissant at the counter in the morning. Lunch in the shade of the pergola. A slice of cake in the afternoon. A cocktail at the lounge bar at night. L'Assiette brings all of it together under one roof on Avenue des Aiglons.",
+    "facets": [
+      {
+        "title": "Restaurant",
+        "text": "Generous cooking, from sharing bruschetta to flambéed king prawns, served indoors or in the garden."
+      },
+      {
+        "title": "Lounge bar",
+        "text": "Velvet stools, low light and cocktails mixed at the bar until 11:30 pm."
+      },
+      {
+        "title": "Pastry",
+        "text": "Entremets, tarts and celebration cakes made on site, to take away or to order."
+      },
+      {
+        "title": "Ice cream",
+        "text": "Ice creams and sorbets in daily flavours, chosen straight from the display."
+      }
+    ]
+  },
+  "featured": {
+    "heading": "Signature plates",
+    "text": "A few dishes our guests photograph before they taste.",
+    "cta": "See the full menu",
+    "priceOnRequest": "Price on request",
+    "view": "See on the menu",
+    "chapter": "The signatures"
+  },
+  "why": {
+    "heading": "Why visit L'Assiette?",
+    "items": [
+      {
+        "title": "In the heart of Brazzaville",
+        "text": "Avenue des Aiglons, opposite Royal Spice and next to the Olympic Palace: easy to find, easy to love."
+      },
+      {
+        "title": "Open 7:30 am to 11:30 pm",
+        "text": "Seven days a week, from breakfast to the last drink. No need to watch the clock."
+      },
+      {
+        "title": "A garden terrace",
+        "text": "Lawn, pergola, plants and turquoise armchairs: one of the most pleasant outdoor spaces in the city centre."
+      },
+      {
+        "title": "Your celebrations, our cakes",
+        "text": "Birthdays, weddings, themed nights: we make the cakes and host your events."
+      }
+    ]
+  },
+  "atmosphere": {
+    "heading": "From the first coffee to the last drink",
+    "day": {
+      "title": "By day",
+      "text": "Light filters through the pergola, plants shade the tables and the pastry display fills up from opening time."
+    },
+    "night": {
+      "title": "By night",
+      "text": "The lounge bar takes over: coloured lamps, banquettes, music and cocktails. DJ nights and themed buffets set the calendar."
+    },
+    "cta": "See the gallery"
+  },
+  "instagram": {
+    "heading": "Follow us on Instagram",
+    "handle": "@lassietterestaurant_",
+    "cta": "View the account",
+    "aria": "Our latest Instagram posts"
+  },
+  "visit": {
+    "heading": "Find us",
+    "address": "Address",
+    "hours": "Opening hours",
+    "hoursText": "Monday to Sunday, 7:30 am to 11:30 pm",
+    "phone": "Phone",
+    "email": "Email",
+    "directions": "Get directions",
+    "showMap": "Show the map",
+    "mapTitle": "Google Maps: L'Assiette, Brazzaville",
+    "mapNote": "The map is loaded from Google Maps when you display it.",
+    "services": "Dine-in, takeaway and delivery",
+    "ctaReserve": "Reserve a table"
+  },
+  "menuPage": {
+    "heading": "The menu",
+    "intro": "From breakfast to dessert, everything is prepared on site. The menu changes with the seasons and the chef's inspiration.",
+    "categoriesLabel": "Categories",
+    "priceNote": "Prices in CFA francs, service included. Some prices are on request: call us or message us on WhatsApp.",
+    "priceOnRequest": "On request",
+    "allergens": "Allergies or a special diet? Let us know and we'll adapt the dish whenever possible.",
+    "ctaReserve": "Reserve a table",
+    "ctaOrder": "Order a cake",
+    "cakeCta": "Order a cake on WhatsApp",
+    "chapterIntro": "Menu",
+    "signature": "Signature"
+  },
+  "about": {
+    "heading": "Flavours of life",
+    "lead": "L'Assiette grew from a simple idea: to gather, in one place in central Brazzaville, everything that makes a day a little sweeter.",
+    "story": {
+      "title": "The address",
+      "text": "On Avenue des Aiglons, steps from Avenue de l'Amitié, L'Assiette occupies a house that opens onto a garden. People come in for a coffee, stay for lunch and come back in the evening. Over the months the pastry counter earned its display case, the lounge bar its velvet stools, and the terrace its turquoise armchairs.",
+      "todo": "[To be completed by the restaurant: opening year, founders and the inspiration behind the name.]"
+    },
+    "philosophy": {
+      "title": "The philosophy",
+      "text": "Keep it simple and do it well. Fresh produce, generous plates, pastry worked every morning and service that takes its time. The name says it: everything starts on the plate."
+    },
+    "cuisine": {
+      "title": "The food and the table",
+      "text": "The menu travels without losing its way: bruschetta and salads to share, grilled king prawns and salmon, baked pasta, generous burgers, then the dessert display. At the bar, cocktails are mixed to order, with or without alcohol."
+    },
+    "place": {
+      "title": "The place",
+      "text": "Two moods live side by side. By day, the garden terrace under its pergola, with lawn and plants. By night, the indoor lounge: banquettes, hanging coloured lamps, marble tables and music. Both host your birthdays, business dinners and private parties."
+    },
+    "ctaGallery": "See the gallery",
+    "ctaReserve": "Reserve a table"
+  },
+  "gallery": {
+    "heading": "Gallery",
+    "intro": "Dishes, pastries, cocktails and atmosphere: a glimpse of L'Assiette in pictures.",
+    "filters": {
+      "all": "All",
+      "food": "Food",
+      "pastry": "Pastry",
+      "bar": "Bar",
+      "place": "The place"
+    },
+    "filterLabel": "Filter the gallery",
+    "open": "Enlarge photo",
+    "close": "Close",
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "credit": "Photos: L'Assiette Brazzaville"
+  },
+  "contact": {
+    "heading": "Contact & reservations",
+    "intro": "Reserve a table for lunch or dinner, order a cake or plan an event. We reply quickly.",
+    "whatsapp": "Reserve on WhatsApp",
+    "call": "Call",
+    "write": "Send an email",
+    "whatsappMessage": "Hello L'Assiette, I would like to reserve a table.",
+    "form": {
+      "heading": "Reservation request",
+      "note": "Your request is sent to the restaurant, which confirms by message or phone. For groups of more than 12, please contact us directly.",
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "phone": "Phone",
+      "phonePlaceholder": "+242 06 000 0000",
+      "date": "Date",
+      "time": "Time",
+      "guests": "Number of guests",
+      "guestsSuffix": {
+        "one": "guest",
+        "other": "guests"
+      },
+      "message": "Message (optional)",
+      "messagePlaceholder": "Occasion, seating preference (garden or lounge), allergies…",
+      "consent": "I agree that this information is used to handle my reservation.",
+      "submit": "Send request",
+      "submitting": "Sending…",
+      "submitWhatsapp": "Send via WhatsApp",
+      "errors": {
+        "required": "This field is required.",
+        "name": "Please enter your name.",
+        "phone": "Please enter a valid phone number.",
+        "date": "Choose a date from today onwards.",
+        "time": "Choose a time between 7:30 am and 11:00 pm.",
+        "guests": "Enter a number of guests between 1 and 12.",
+        "consent": "Tick this box to send the request.",
+        "network": "Sending failed. Try again or contact us on WhatsApp."
+      },
+      "successTitle": "Request sent",
+      "successText": "Thank you! The restaurant will confirm your reservation shortly. Need to change it? Give us a call.",
+      "whatsappTitle": "WhatsApp opens in a new tab",
+      "whatsappText": "Your reservation message is ready: just press send. If WhatsApp didn't open, use the button below.",
+      "whatsappOpen": "Open WhatsApp",
+      "waTemplate": "Hello L'Assiette, I would like to reserve a table.\nName: {name}\nPhone: {phone}\nDate: {date}\nTime: {time}\nGuests: {guests}\nMessage: {message}"
+    }
+  },
+  "footer": {
+    "tagline": "Restaurant, lounge bar, pastry & ice cream in Brazzaville",
+    "explore": "Explore",
+    "contact": "Contact",
+    "follow": "Follow",
+    "hours": "Every day, 7:30 am – 11:30 pm",
+    "rights": "All rights reserved.",
+    "credits": "Photos © L'Assiette Brazzaville",
+    "language": "Language"
+  },
+  "common": {
+    "reserve": "Reserve a table",
+    "seeMenu": "See the menu",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "brandHome": "– back to home"
+  },
+  "day": {
+    "title": "By day",
+    "heading": "Garden light",
+    "text": "At 7:30 the display fills with tarts and entremets, coffee is poured, and the pergola filters the sun onto the lawn. Lunch happens outside, in the shade of the plants, feet almost in the grass.",
+    "cta": "The pastry counter"
+  },
+  "night": {
+    "title": "By night",
+    "heading": "The lounge lights up",
+    "text": "Coloured glass lamps, deep banquettes, marble tables and cocktails mixed to order. DJ nights and themed buffets make L’Assiette a place where people stay late.",
+    "cta": "Book an evening"
+  },
+  "actionBar": {
+    "reserve": "Reserve",
+    "whatsapp": "WhatsApp"
+  },
+  "contactSummary": {
+    "title": "Your reservation",
+    "empty": "Choose a date, a time and the number of guests.",
+    "line": "{date} at {time}, {guests}"
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "_readme": "Source photos come from the restaurant's own Instagram feed (saved in /assets). `n` is the 1-based position of the file in `ls assets/*.jpg`. `crop` removes a fraction of the image from the top/bottom so baked-in captions disappear. Run `npm run images` after editing.",
+  "images": [
+    {
+      "n": 1,
+      "slug": "chef-sauce",
+      "crop": {
+        "top": 0.08,
+        "bottom": 0.08
+      },
+      "alt": {
+        "fr": "Un chef nappe un dessert de sauce caramel à L'Assiette Brazzaville",
+        "en": "A chef pours caramel sauce over a dessert at L'Assiette Brazzaville"
+      }
+    },
+    {
+      "n": 2,
+      "slug": "bar-pause-gourmande",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Boissons fraîches et choux à la crème sur le comptoir du bar",
+        "en": "Cold drinks and cream puffs on the bar counter"
+      }
+    },
+    {
+      "n": 3,
+      "slug": "tarte-fraises",
+      "crop": {
+        "top": 0.22,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Tarte aux fraises de la pâtisserie L'Assiette",
+        "en": "Strawberry tart from L'Assiette pastry counter"
+      }
+    },
+    {
+      "n": 4,
+      "slug": "pizza",
+      "crop": {
+        "top": 0.12,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Part de pizza au fromage fondant",
+        "en": "Slice of pizza with melted cheese"
+      }
+    },
+    {
+      "n": 7,
+      "slug": "salade-fraicheur",
+      "crop": {
+        "top": 0.32,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Salade fraîche aux légumes croquants servie dans un bol",
+        "en": "Fresh salad with crunchy vegetables served in a bowl"
+      }
+    },
+    {
+      "n": 9,
+      "slug": "club-sandwich",
+      "crop": {
+        "top": 0.34,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Club sandwich et jus frais sur la terrasse",
+        "en": "Club sandwich and fresh juice on the terrace"
+      }
+    },
+    {
+      "n": 11,
+      "slug": "pates-art",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.18
+      },
+      "alt": {
+        "fr": "Assiette de pâtes dressée dans un plat doré",
+        "en": "Plate of pasta served in a golden dish"
+      }
+    },
+    {
+      "n": 12,
+      "slug": "tartines",
+      "crop": {
+        "top": 0.34,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Tartines garnies servies sur ardoise",
+        "en": "Topped toasts served on a slate board"
+      }
+    },
+    {
+      "n": 14,
+      "slug": "planche-apero",
+      "crop": {
+        "top": 0.36,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Planche apéritive à partager",
+        "en": "Sharing board for aperitif"
+      }
+    },
+    {
+      "n": 15,
+      "slug": "planche-mixte",
+      "crop": {
+        "top": 0.32,
+        "bottom": 0.22
+      },
+      "alt": {
+        "fr": "Planche mixte dressée sur assiette ovale",
+        "en": "Mixed platter served on an oval plate"
+      }
+    },
+    {
+      "n": 17,
+      "slug": "red-velvet",
+      "crop": {
+        "top": 0.52,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Gâteau red velvet aux pétales de rose",
+        "en": "Red velvet cake with rose petals"
+      }
+    },
+    {
+      "n": 18,
+      "slug": "salade-tomate-mozzarella",
+      "crop": {
+        "top": 0.34,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Salade tomate mozzarella au basilic",
+        "en": "Tomato and mozzarella salad with basil"
+      }
+    },
+    {
+      "n": 19,
+      "slug": "cheesecake",
+      "crop": {
+        "top": 0.46,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Cheesecake de la pâtisserie L'Assiette",
+        "en": "Cheesecake from L'Assiette pastry counter"
+      }
+    },
+    {
+      "n": 20,
+      "slug": "cocktail-lagon",
+      "crop": {
+        "top": 0.06,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Cocktail bleu lagon servi en verre à pied",
+        "en": "Blue lagoon cocktail served in a stemmed glass"
+      }
+    },
+    {
+      "n": 21,
+      "slug": "pave-saumon",
+      "crop": {
+        "top": 0.45,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Pavé de saumon grillé et ses légumes",
+        "en": "Grilled salmon steak with vegetables"
+      }
+    },
+    {
+      "n": 22,
+      "slug": "grillade",
+      "crop": {
+        "top": 0.12,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Viande grillée servie avec citron",
+        "en": "Grilled meat served with lemon"
+      }
+    },
+    {
+      "n": 23,
+      "slug": "gambas",
+      "crop": {
+        "top": 0.42,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Gambas flambées avec frites et citron",
+        "en": "Flambéed king prawns with fries and lemon"
+      }
+    },
+    {
+      "n": 24,
+      "slug": "plat-pistache",
+      "crop": {
+        "top": 0.36,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Plat crémeux à la pistache servi en cocotte",
+        "en": "Creamy pistachio dish served in a casserole"
+      }
+    },
+    {
+      "n": 26,
+      "slug": "invitee-burger",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Une cliente savoure un burger à L'Assiette",
+        "en": "A guest enjoys a burger at L'Assiette"
+      }
+    },
+    {
+      "n": 27,
+      "slug": "table-evenement",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Table dressée pour un événement privé, fleurs et bougies",
+        "en": "Table set for a private event with flowers and candles"
+      }
+    },
+    {
+      "n": 28,
+      "slug": "philly-cheese",
+      "crop": {
+        "top": 0.36,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Sandwich Philly cheese garni",
+        "en": "Loaded Philly cheese sandwich"
+      }
+    },
+    {
+      "n": 29,
+      "slug": "terrasse",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.53
+      },
+      "alt": {
+        "fr": "La terrasse-jardin de L'Assiette sous sa pergola, à Brazzaville",
+        "en": "L'Assiette's garden terrace under the pergola in Brazzaville"
+      }
+    },
+    {
+      "n": 30,
+      "slug": "bruschetta",
+      "crop": {
+        "top": 0.34,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Assortiment de bruschetta sur ardoise",
+        "en": "Assorted bruschetta on a slate board"
+      }
+    },
+    {
+      "n": 31,
+      "slug": "burger",
+      "crop": {
+        "top": 0.18,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Burger maison aux oignons frits et frites",
+        "en": "House burger with crispy onions and fries"
+      }
+    },
+    {
+      "n": 32,
+      "slug": "crevettes-brick",
+      "crop": {
+        "top": 0.45,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Crevettes en feuille de brick servies en panier",
+        "en": "Prawns in crispy brick pastry served in a basket"
+      }
+    },
+    {
+      "n": 33,
+      "slug": "mac-and-cheese",
+      "crop": {
+        "top": 0.34,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Mac and cheese gratiné",
+        "en": "Baked mac and cheese"
+      }
+    },
+    {
+      "n": 34,
+      "slug": "americain-crunchy",
+      "crop": {
+        "top": 0.34,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Sandwich Américain crunchy avec frites",
+        "en": "Crunchy American sandwich with fries"
+      }
+    },
+    {
+      "n": 35,
+      "slug": "jardin",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Pelouse de la terrasse de L'Assiette, ballon et fauteuils",
+        "en": "Lawn of L'Assiette's terrace with a football and lounge chairs"
+      }
+    },
+    {
+      "n": 36,
+      "slug": "cocktail-signature",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Cocktail signature à l'orange au bar lounge",
+        "en": "Signature orange cocktail at the lounge bar"
+      }
+    },
+    {
+      "n": 37,
+      "slug": "piece-montee",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Pièce montée de mariage ornée de roses rouges",
+        "en": "Wedding cake decorated with red roses"
+      }
+    },
+    {
+      "n": 38,
+      "slug": "salon",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Le salon intérieur de L'Assiette, banquettes et lumière tamisée",
+        "en": "L'Assiette's indoor lounge with banquettes and soft lighting"
+      }
+    },
+    {
+      "n": 39,
+      "slug": "gateau-creme",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Gâteau à la crème de la pâtisserie",
+        "en": "Cream cake from the pastry counter"
+      }
+    },
+    {
+      "n": 40,
+      "slug": "bar-lounge",
+      "crop": {
+        "top": 0.44,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Le bar lounge de L'Assiette, tabourets velours et tables en marbre",
+        "en": "L'Assiette's lounge bar with velvet stools and marble tables"
+      }
+    },
+    {
+      "n": 41,
+      "slug": "comptoir-patisserie",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Le comptoir pâtisserie de L'Assiette et ses vitrines",
+        "en": "L'Assiette's pastry counter and display cases"
+      }
+    },
+    {
+      "n": 42,
+      "slug": "flambe",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Flambage en cuisine à L'Assiette",
+        "en": "Flambé in the kitchen at L'Assiette"
+      }
+    },
+    {
+      "n": 43,
+      "slug": "cocktail-detox",
+      "crop": {
+        "top": 0.28,
+        "bottom": 0
+      },
+      "alt": {
+        "fr": "Cocktail détox vert servi avec glaçons",
+        "en": "Green detox cocktail served over ice"
+      }
+    },
+    {
+      "n": 44,
+      "slug": "soupe-crevettes",
+      "crop": {
+        "top": 0.24,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Soupe aux crevettes à l'asiatique",
+        "en": "Asian-style prawn soup"
+      }
+    },
+    {
+      "n": 45,
+      "slug": "vitrine-patisserie",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Vitrine de pâtisseries : tartelettes et entremets",
+        "en": "Pastry display: tartlets and entremets"
+      }
+    },
+    {
+      "n": 46,
+      "slug": "gateau-fete",
+      "crop": {
+        "top": 0.0,
+        "bottom": 0.0
+      },
+      "alt": {
+        "fr": "Gâteau de fête décoré pour Halloween",
+        "en": "Celebration cake decorated for Halloween"
+      }
+    }
+  ]
+}

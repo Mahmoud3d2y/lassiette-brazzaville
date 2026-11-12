@@ -1,0 +1,88 @@
+{
+  "_readme": "Carte éditable. Les noms de plats proviennent des publications Instagram du restaurant. `price: null` = prix à renseigner (affiché « sur demande »). Les prix sont en francs CFA. Les 3 prix renseignés ont été lus sur des étiquettes de vitrine photographiées (à confirmer).",
+  "currency": "FCFA",
+  "categories": [
+    {
+      "id": "petit-dejeuner",
+      "name": { "fr": "Petit-déjeuner & viennoiseries", "en": "Breakfast & pastries" },
+      "intro": { "fr": "Dès 7h30, viennoiseries maison, café et jus frais au comptoir ou en terrasse.", "en": "From 7:30 am, house-made viennoiseries, coffee and fresh juice at the counter or on the terrace." },
+      "items": [
+        { "name": { "fr": "Viennoiseries du jour", "en": "Viennoiseries of the day" }, "desc": { "fr": "Croissants, pains au chocolat et brioches sortis du four.", "en": "Croissants, pains au chocolat and brioches fresh from the oven." }, "price": null },
+        { "name": { "fr": "Cake vanille", "en": "Vanilla loaf cake" }, "desc": { "fr": "Tranche de cake moelleux à la vanille.", "en": "Slice of soft vanilla loaf cake." }, "price": 1500 },
+        { "name": { "fr": "Café, thé & chocolat chaud", "en": "Coffee, tea & hot chocolate" }, "desc": { "fr": "Espresso, cappuccino, thés et chocolat.", "en": "Espresso, cappuccino, teas and hot chocolate." }, "price": null },
+        { "name": { "fr": "Jus de fruits frais", "en": "Fresh fruit juice" }, "desc": { "fr": "Pressés à la commande selon les fruits du jour.", "en": "Pressed to order with the fruit of the day." }, "price": null }
+      ]
+    },
+    {
+      "id": "entrees",
+      "name": { "fr": "Entrées & à partager", "en": "Starters & sharing" },
+      "intro": { "fr": "Des assiettes à poser au milieu de la table.", "en": "Plates made to be set in the middle of the table." },
+      "items": [
+        { "name": { "fr": "Assortiment de bruschetta", "en": "Assorted bruschetta" }, "desc": { "fr": "Pains grillés et garnitures variées, servis sur ardoise.", "en": "Toasted breads with assorted toppings, served on a slate board." }, "price": null, "image": "bruschetta", "featured": true },
+        { "name": { "fr": "Crevettes aux brick", "en": "Prawns in brick pastry" }, "desc": { "fr": "Crevettes croustillantes en feuille de brick, sauce d'accompagnement.", "en": "Crispy prawns wrapped in brick pastry, served with a dipping sauce." }, "price": null, "image": "crevettes-brick", "featured": true },
+        { "name": { "fr": "Soupe aux crevettes à l'asiatique", "en": "Asian-style prawn soup" }, "desc": { "fr": "Bouillon parfumé, crevettes et légumes.", "en": "Fragrant broth with prawns and vegetables." }, "price": null, "image": "soupe-crevettes" },
+        { "name": { "fr": "Salade Waldorf", "en": "Waldorf salad" }, "desc": { "fr": "Pommes, céleri, noix et jeunes pousses.", "en": "Apple, celery, walnuts and young leaves." }, "price": null },
+        { "name": { "fr": "Salade tomate mozzarella", "en": "Tomato & mozzarella salad" }, "desc": { "fr": "Tomates, mozzarella, basilic et huile d'olive.", "en": "Tomato, mozzarella, basil and olive oil." }, "price": null, "image": "salade-tomate-mozzarella" },
+        { "name": { "fr": "Planche mixte", "en": "Mixed platter" }, "desc": { "fr": "Sélection à partager pour l'apéritif.", "en": "A sharing selection for aperitif." }, "price": null, "image": "planche-mixte" }
+      ]
+    },
+    {
+      "id": "plats",
+      "name": { "fr": "Plats", "en": "Mains" },
+      "intro": { "fr": "Poissons, viandes et pâtes, cuisinés à la commande.", "en": "Fish, meat and pasta, cooked to order." },
+      "items": [
+        { "name": { "fr": "Gambas", "en": "King prawns" }, "desc": { "fr": "Gambas flambées, frites et citron.", "en": "Flambéed king prawns with fries and lemon." }, "price": null, "image": "gambas", "featured": true },
+        { "name": { "fr": "Pavé de saumon", "en": "Salmon steak" }, "desc": { "fr": "Saumon grillé et légumes de saison.", "en": "Grilled salmon with seasonal vegetables." }, "price": null, "image": "pave-saumon", "featured": true },
+        { "name": { "fr": "Grillades", "en": "Grills" }, "desc": { "fr": "Viandes grillées servies avec garniture au choix.", "en": "Grilled meats served with your choice of side." }, "price": null, "image": "grillade" },
+        { "name": { "fr": "Mac and cheese", "en": "Mac and cheese" }, "desc": { "fr": "Pâtes gratinées au fromage, croûtons dorés.", "en": "Baked cheesy pasta with golden croutons." }, "price": null, "image": "mac-and-cheese" },
+        { "name": { "fr": "Pâtes du moment", "en": "Pasta of the moment" }, "desc": { "fr": "Selon l'inspiration du chef.", "en": "According to the chef's inspiration." }, "price": null, "image": "pates-art" },
+        { "name": { "fr": "Pizza", "en": "Pizza" }, "desc": { "fr": "Pâte fine, garnitures au choix.", "en": "Thin crust with your choice of toppings." }, "price": null, "image": "pizza" }
+      ]
+    },
+    {
+      "id": "burgers",
+      "name": { "fr": "Burgers & sandwichs", "en": "Burgers & sandwiches" },
+      "intro": { "fr": "Généreux, servis avec frites.", "en": "Generous, served with fries." },
+      "items": [
+        { "name": { "fr": "Burger L'Assiette", "en": "L'Assiette burger" }, "desc": { "fr": "Steak, cheddar fondant, oignons frits croustillants, sauce maison.", "en": "Beef patty, melted cheddar, crispy fried onions, house sauce." }, "price": null, "image": "burger", "featured": true },
+        { "name": { "fr": "Américain crunchy", "en": "Crunchy American" }, "desc": { "fr": "Pain baguette, garniture croustillante et sauce.", "en": "Baguette, crunchy filling and sauce." }, "price": null, "image": "americain-crunchy" },
+        { "name": { "fr": "Philly cheese", "en": "Philly cheese" }, "desc": { "fr": "Émincé de bœuf, fromage fondu, oignons.", "en": "Sliced beef, melted cheese, onions." }, "price": null, "image": "philly-cheese" },
+        { "name": { "fr": "Parfait club sandwich", "en": "Perfect club sandwich" }, "desc": { "fr": "Pain de mie toasté, poulet, crudités.", "en": "Toasted bread, chicken, fresh vegetables." }, "price": null, "image": "club-sandwich" }
+      ]
+    },
+    {
+      "id": "patisserie",
+      "name": { "fr": "Pâtisserie", "en": "Pastry" },
+      "intro": { "fr": "Entremets, tartes et gâteaux de fête réalisés sur place. Gâteaux d'anniversaire et pièces montées sur commande.", "en": "Entremets, tarts and celebration cakes made on site. Birthday cakes and tiered cakes to order." },
+      "items": [
+        { "name": { "fr": "Tartelette pistache", "en": "Pistachio tartlet" }, "desc": { "fr": "Crème pistache sur pâte sablée.", "en": "Pistachio cream on shortcrust pastry." }, "price": 3000, "image": "vitrine-patisserie", "featured": true },
+        { "name": { "fr": "Dôme chocolat", "en": "Chocolate dome" }, "desc": { "fr": "Mousse au chocolat, cœur fondant.", "en": "Chocolate mousse with a soft centre." }, "price": 3000 },
+        { "name": { "fr": "Cheesecake", "en": "Cheesecake" }, "desc": { "fr": "Crémeux, sur biscuit sablé.", "en": "Creamy, on a shortbread base." }, "price": null, "image": "cheesecake" },
+        { "name": { "fr": "Red velvet", "en": "Red velvet" }, "desc": { "fr": "Gâteau rouge velours, glaçage cream cheese.", "en": "Red velvet sponge with cream-cheese frosting." }, "price": null, "image": "red-velvet" },
+        { "name": { "fr": "Tarte aux fraises", "en": "Strawberry tart" }, "desc": { "fr": "Crème légère et fraises fraîches.", "en": "Light cream and fresh strawberries." }, "price": null, "image": "tarte-fraises" },
+        { "name": { "fr": "Tiramisu", "en": "Tiramisu" }, "desc": { "fr": "Mascarpone, café et cacao.", "en": "Mascarpone, coffee and cocoa." }, "price": null },
+        { "name": { "fr": "Gâteaux sur commande", "en": "Cakes to order" }, "desc": { "fr": "Anniversaires, mariages, fêtes : contactez-nous 48 h à l'avance.", "en": "Birthdays, weddings, celebrations: contact us 48 hours ahead." }, "price": null, "image": "piece-montee" }
+      ]
+    },
+    {
+      "id": "glacier",
+      "name": { "fr": "Glacier", "en": "Ice cream" },
+      "intro": { "fr": "Glaces et sorbets, parfums du jour en vitrine.", "en": "Ice creams and sorbets, daily flavours on display." },
+      "items": [
+        { "name": { "fr": "Boule de glace ou sorbet", "en": "Scoop of ice cream or sorbet" }, "desc": { "fr": "Choisissez votre parfum au comptoir.", "en": "Choose your flavour at the counter." }, "price": null },
+        { "name": { "fr": "Coupe gourmande", "en": "Sundae" }, "desc": { "fr": "Glace, sauce chaude et éclats croquants en cornet ou en coupe.", "en": "Ice cream, warm sauce and crunchy toppings in a cone or cup." }, "price": null }
+      ]
+    },
+    {
+      "id": "bar",
+      "name": { "fr": "Bar & cocktails", "en": "Bar & cocktails" },
+      "intro": { "fr": "Au lounge bar, du cocktail de l'après-midi au dernier verre de la soirée.", "en": "At the lounge bar, from an afternoon cocktail to the last drink of the night." },
+      "items": [
+        { "name": { "fr": "Cocktail détox", "en": "Detox cocktail" }, "desc": { "fr": "Concombre, menthe, citron vert et glace pilée.", "en": "Cucumber, mint, lime and crushed ice." }, "price": null, "image": "cocktail-detox" },
+        { "name": { "fr": "Cocktails signature", "en": "Signature cocktails" }, "desc": { "fr": "Avec ou sans alcool, préparés au bar.", "en": "With or without alcohol, mixed at the bar." }, "price": null, "image": "cocktail-signature", "featured": true },
+        { "name": { "fr": "Vins & champagnes", "en": "Wines & champagne" }, "desc": { "fr": "Sélection au verre et à la bouteille.", "en": "Selection by the glass and by the bottle." }, "price": null },
+        { "name": { "fr": "Softs & eaux", "en": "Soft drinks & water" }, "desc": { "fr": "Sodas, eaux plates et gazeuses.", "en": "Sodas, still and sparkling water." }, "price": null }
+      ]
+    }
+  ]
+}

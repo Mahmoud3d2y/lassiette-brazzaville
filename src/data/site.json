@@ -1,0 +1,41 @@
+{
+  "_readme": "Informations vérifiées sur les profils Instagram et Facebook officiels (novembre 2026). Les champs marqués TODO sont des espaces réservés à compléter par le restaurant.",
+  "name": "L'Assiette",
+  "legalName": "L'Assiette Restaurant",
+  "tagline": "Saveurs de la vie",
+  "url": "https://www.lassiette-brazzaville.com",
+  "_url_TODO": "Remplacer par le vrai nom de domaine avant la mise en ligne (utilisé pour canonical, hreflang, Open Graph, sitemap et données structurées).",
+  "defaultLang": "fr",
+  "langs": ["fr", "en"],
+  "phones": [
+    { "display": "+242 05 514 2222", "e164": "+242055142222" },
+    { "display": "+242 06 903 2222", "e164": "+242069032222" }
+  ],
+  "whatsapp": "242055142222",
+  "_whatsapp_note": "Numéro affiché avec l'icône 📲 sur Instagram. Confirmer que WhatsApp est bien actif sur cette ligne.",
+  "email": "lassiette242@gmail.com",
+  "address": {
+    "street": "01 bis Avenue des Aiglons, rue de l'Amitié",
+    "landmark": { "fr": "En face du Royal Spice, à côté de l'Olympic Palace", "en": "Opposite Royal Spice, next to the Olympic Palace" },
+    "district": { "fr": "Centre-ville", "en": "City centre" },
+    "city": "Brazzaville",
+    "country": { "fr": "République du Congo", "en": "Republic of the Congo" },
+    "countryCode": "CG"
+  },
+  "plusCode": "P7HC+P25 Brazzaville",
+  "mapsUrl": "https://maps.app.goo.gl/mRqF4SD98tG9GAkk8",
+  "mapsEmbed": "https://maps.google.com/maps?q=P7HC%2BP25%20Brazzaville&z=17&hl=fr&output=embed",
+  "hours": { "days": "Mo-Su", "open": "07:30", "close": "23:30" },
+  "social": {
+    "instagram": { "url": "https://www.instagram.com/lassietterestaurant_/", "handle": "@lassietterestaurant_" },
+    "facebook": { "url": "https://www.facebook.com/p/LAssiette-Brazzaville-61557681075757/", "handle": "L'Assiette Brazzaville" }
+  },
+  "services": ["dine-in", "takeout", "delivery"],
+  "reservation": {
+    "method": "whatsapp",
+    "formEndpoint": "",
+    "_formEndpoint_TODO": "Optionnel : URL d'un service de formulaire (ex. https://formspree.io/f/xxxx) pour recevoir les demandes par e-mail. Vide = la demande est envoyée via WhatsApp.",
+    "maxGuestsOnline": 12
+  },
+  "ogImage": "bar-lounge"
+}
