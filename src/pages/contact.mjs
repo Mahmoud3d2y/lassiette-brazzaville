@@ -17,7 +17,7 @@ export default function contact(ctx) {
   const body = `
     <section class="page-head">
       <div class="container">
-        <p class="eyebrow">${esc(t.book.eyebrow)}</p>
+        <p class="eyebrow eyebrow--rule">${esc(t.book.eyebrow)}</p>
         <h1 class="title-display">${esc(t.contact.heading)}</h1>
         <p class="lead">${typo(esc(t.contact.intro))}</p>
         <div class="contact-actions">

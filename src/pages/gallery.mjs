@@ -19,7 +19,7 @@ export default function gallery(ctx) {
   const body = `
     <section class="page-head">
       <div class="container">
-        <p class="eyebrow">${esc(t.nav.gallery)}</p>
+        <p class="eyebrow eyebrow--rule">${esc(t.nav.gallery)}</p>
         <h1 class="title-display">${esc(t.gallery.heading)}</h1>
         <p class="lead">${typo(esc(t.gallery.intro))}</p>
         <div class="filters" role="group" aria-label="${esc(t.gallery.filterLabel)}" data-filters>

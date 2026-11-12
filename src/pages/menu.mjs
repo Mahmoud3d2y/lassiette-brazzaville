@@ -9,7 +9,7 @@ export default function menuPage(ctx) {
   const body = `
     <section class="page-head">
       <div class="container">
-        <p class="eyebrow">${esc(t.menuPage.chapterIntro)}</p>
+        <p class="eyebrow eyebrow--rule">${esc(t.menuPage.chapterIntro)}</p>
         <h1 class="title-display">${esc(t.menuPage.heading)}</h1>
         <p class="lead">${typo(esc(t.menuPage.intro))}</p>
         <p class="menu-note">${typo(esc(t.menuPage.priceNote))}</p>
@@ -46,7 +46,7 @@ export default function menuPage(ctx) {
           ${others.map((d) => `<li class="menu-item${d.image ? ' menu-item--photo' : ''}">
             ${d.image ? `<figure class="menu-item__media">${img(d.image, { sizes: '3.5rem' })}</figure>` : ''}
             <div class="menu-item__body">
-              <div class="menu-item__row"><h3 class="menu-item__name">${typo(esc(d.name[lang]))}</h3><span class="menu-item__price${d.price == null ? ' menu-item__price--ask' : ''}">${price(d)}</span></div>
+              <div class="menu-item__row"><h3 class="menu-item__name">${typo(esc(d.name[lang]))}</h3><span class="menu-item__dots" aria-hidden="true"></span><span class="menu-item__price${d.price == null ? ' menu-item__price--ask' : ''}">${price(d)}</span></div>
               <p class="menu-item__desc">${typo(esc(d.desc[lang]))}</p>
             </div>
           </li>`).join('\n          ')}

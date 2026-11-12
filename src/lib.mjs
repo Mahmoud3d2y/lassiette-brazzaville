@@ -62,5 +62,12 @@ export function wordmark(site, { cls = '', tagline = true } = {}) {
   return `<span class="wordmark${cls ? ' ' + cls : ''}"><span class="wordmark__name" aria-hidden="true">${visual}</span><span class="visually-hidden">${esc(site.name)}</span>${tagline ? `<span class="wordmark__tag">${esc(site.tagline)}</span>` : ''}</span>`;
 }
 
+/** Wrap one phrase of an (already escaped) heading in <em> for the italic serif accent. Falls back to the plain text. */
+export function accent(text, phrase) {
+  if (!phrase) return text;
+  const i = text.indexOf(phrase);
+  return i === -1 ? text : `${text.slice(0, i)}<em>${phrase}</em>${text.slice(i + phrase.length)}`;
+}
+
 export const waLink = (number, text) => `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
 export const telLink = (e164) => `tel:${e164}`;
