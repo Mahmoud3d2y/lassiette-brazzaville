@@ -282,5 +282,12 @@
     "title": "Votre réservation",
     "empty": "Choisissez une date, une heure et le nombre de convives.",
     "line": "{date} à {time}, {guests}"
+  },
+  "book": {
+    "eyebrow": "Réservation",
+    "heading": "Prenez une table.",
+    "text": "Tous les jours, de 7h30 à 23h30. Réponse rapide sur WhatsApp ou par téléphone.",
+    "cta": "Réserver une table",
+    "strip": "Le lieu, l’assiette, le verre"
   }
 }

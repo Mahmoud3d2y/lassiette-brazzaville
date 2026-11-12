@@ -1,4 +1,4 @@
-import { esc, attr, typo, icon, waLink } from '../lib.mjs';
+import { esc, attr, typo, icon, waLink, wordmark } from '../lib.mjs';
 
 export function layout(ctx, { key, body, extraHead = '', bodyClass = '', jsonLd = [] }) {
   const { t, lang, site, langs } = ctx;
@@ -20,8 +20,8 @@ export function layout(ctx, { key, body, extraHead = '', bodyClass = '', jsonLd 
   <meta name="description" content="${attr(page.description)}">
   ${is404 ? '<meta name="robots" content="noindex">' : `<link rel="canonical" href="${canonical}">`}
   ${alternates}
-  <meta name="theme-color" content="#0B1619">
-  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="color-scheme" content="light">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta property="og:type" content="website">
@@ -39,8 +39,7 @@ export function layout(ctx, { key, body, extraHead = '', bodyClass = '', jsonLd 
   <meta name="twitter:title" content="${attr(page.title)}">
   <meta name="twitter:description" content="${attr(page.description)}">
   <meta name="twitter:image" content="${site.url}/img/${site.ogImage}-${ogW}.webp">
-  <link rel="preload" href="/fonts/bodoni-moda-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/bodoni-moda-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/main.css?v=${ctx.version}">
   <script type="application/ld+json">${JSON.stringify(ld.length === 1 ? ld[0] : ld)}</script>
   ${extraHead}
@@ -62,23 +61,22 @@ ${body}
 `;
 }
 
+function langSwitch(ctx, key, cls = '') {
+  const { lang, langs } = ctx;
+  const links = langs.map((l) => `<a class="lang__link" href="${ctx.url(key, l)}" lang="${l}" hreflang="${l}" data-lang-switch="${l}"${l === lang ? ' aria-current="true"' : ''} title="${attr(ctx.i18n[l].langName)}">${l.toUpperCase()}</a>`)
+    .join('<span class="lang__sep" aria-hidden="true">/</span>');
+  return `<div class="lang${cls ? ' ' + cls : ''}" aria-label="${attr(ctx.t.nav.langSwitch)}">${links}</div>`;
+}
+
 function header(ctx, key) {
-  const { t, lang, site, langs } = ctx;
+  const { t, lang, site } = ctx;
   const items = ['home', 'menu', 'about', 'gallery', 'contact'];
-  const nav = items.map((k) => {
-    const current = k === key ? ' aria-current="page"' : '';
-    return `<li><a class="nav__link" href="${ctx.url(k)}"${current}>${esc(t.nav[k])}</a></li>`;
-  }).join('\n          ');
-  const langLinks = langs.map((l) => {
-    const current = l === lang;
-    return `<a class="lang__link" href="${ctx.url(key, l)}" lang="${l}" hreflang="${l}" data-lang-switch="${l}"${current ? ' aria-current="true"' : ''} title="${attr(ctx.i18n[l].langName)}">${l.toUpperCase()}</a>`;
-  }).join('<span class="lang__sep" aria-hidden="true">/</span>');
+  const nav = items.map((k) => `<li><a class="nav__link" href="${ctx.url(k)}"${k === key ? ' aria-current="page"' : ''}>${esc(t.nav[k])}</a></li>`).join('\n          ');
 
   return `<header class="site-header" data-header>
     <div class="container site-header__inner">
       <a class="brand" href="${ctx.url('home')}">
-        <span class="brand__name">${typo(site.name)}</span>
-        <span class="brand__tag">${esc(site.tagline)}</span>
+        ${wordmark(site, { cls: 'wordmark--row' })}
         <span class="visually-hidden">${esc(t.common.brandHome)}</span>
       </a>
       <nav class="nav" id="site-nav" aria-label="${lang === 'fr' ? 'Navigation principale' : 'Main navigation'}" data-nav>
@@ -86,13 +84,14 @@ function header(ctx, key) {
           ${nav}
         </ul>
         <div class="nav__extras">
-          <div class="lang" aria-label="${attr(t.nav.langSwitch)}">${langLinks}</div>
+          ${langSwitch(ctx, key)}
           <a class="btn btn--primary" href="${ctx.url('contact')}">${esc(t.nav.reserve)}</a>
           <a class="btn btn--whatsapp" href="${waLink(site.whatsapp, t.contact.whatsappMessage)}" target="_blank" rel="noopener">${icon('whatsapp')}<span>${esc(t.common.whatsapp)}</span></a>
         </div>
       </nav>
       <div class="site-header__actions">
-        <div class="lang lang--header" aria-label="${attr(t.nav.langSwitch)}">${langLinks}</div>
+        ${langSwitch(ctx, key, 'lang--header')}
+        <a class="btn btn--icon site-header__social" href="${site.social.instagram.url}" target="_blank" rel="noopener" aria-label="${esc(t.common.instagram)}">${icon('instagram')}</a>
         <a class="btn btn--primary btn--sm site-header__cta" href="${ctx.url('contact')}">${esc(t.nav.reserve)}</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
           <span class="nav-toggle__label" data-label-open>${esc(t.nav.openMenu)}</span>
@@ -113,7 +112,7 @@ function footer(ctx, key) {
   return `<footer class="site-footer">
     <div class="container site-footer__grid">
       <div class="site-footer__brand">
-        <p class="brand brand--footer"><span class="brand__name">${typo(site.name)}</span><span class="brand__tag">${esc(site.tagline)}</span></p>
+        <p class="brand brand--footer">${wordmark(site, { cls: 'wordmark--row' })}</p>
         <p class="site-footer__tagline">${esc(t.footer.tagline)}</p>
         <p class="site-footer__hours">${icon('clock')}<span>${esc(t.footer.hours)}</span></p>
       </div>

@@ -17,7 +17,7 @@ Prérequis : Node 18+. Aucune dépendance npm. `cwebp` n'est nécessaire que pou
 
 ## Direction artistique
 
-« Noir lagon » : un univers sombre et cinématographique tiré du lieu lui-même — le vert-bleu profond des murs du salon, la porcelaine des assiettes, le verre lagon, le laiton des tabourets. Bodoni Moda (didone fine) porte le nom et les titres, Jost le texte courant. Une seule respiration claire (section « Le jour », pâtisserie et jardin) rythme la page d'accueil. Le laiton n'apparaît que sur les prix et les filets.
+« Paris · Congo » : un site blanc, aéré et précis, dans l'esprit des sites de restaurants parisiens contemporains et du design Apple. Grands titres fins, petits libellés en capitales espacées, boutons pilules noirs, photo plein écran avec le logotype au centre, contact en écran partagé (plan + panneau sombre). Le turquoise du logo n'apparaît qu'en touches (favicon, sélection, liens). Le logotype reprend le vrai logo du restaurant : capitales fines en Bodoni Moda et un A dessiné en tour Eiffel (SVG inline dans `src/lib.mjs`, fonction `wordmark`). Le texte courant utilise la police système (SF Pro sur Apple, Segoe UI sur Windows), donc aucune police à charger hormis Bodoni pour le logotype.
 
 Mouvement : une seule ouverture orchestrée sur l'accueil (rideaux d'image, lettres qui montent, lent zoom), rideaux de révélation au défilement, parallaxe discrète sur la photo plein écran du soir, transitions de page natives (View Transitions API, sans bibliothèque), le tout désactivé avec `prefers-reduced-motion`. Sur mobile : barre d'actions fixe (Réserver / WhatsApp) et menu plein écran.
 
@@ -83,7 +83,7 @@ nom et slogan « Saveurs de la vie », concept (restaurant, lounge bar, pâtisse
 - [ ] **Prix de la carte** : tous à `null` sauf trois lus sur des étiquettes de vitrine (tartelette pistache 3 000, dôme 3 000, cake vanille 1 500 FCFA). Descriptions des plats à relire.
 - [ ] **WhatsApp** : confirmer que le +242 05 514 2222 reçoit bien les messages WhatsApp.
 - [ ] **Histoire du restaurant** (page À propos) : année d'ouverture, fondateurs, origine du nom — un emplacement est prévu dans `about.story` des fichiers i18n.
-- [ ] **Logo officiel** en SVG ou PNG haute définition : le site utilise pour l'instant un logotype typographique (Bodoni Moda). Remplacer `.brand` dans `src/partials/layout.mjs` et `public/favicon.svg` / `public/apple-touch-icon.png`.
+- [ ] **Logo officiel** en SVG ou PNG haute définition : le site utilise pour l'instant un logotype redessiné (Bodoni Moda + A en tour Eiffel, fonction `wordmark` dans `src/lib.mjs`). Remplacer son contenu par le fichier officiel, ainsi que `public/favicon.svg` et `public/apple-touch-icon.png` (généré par `node src/icons.mjs`).
 - [ ] **Photos en haute définition** (idéalement au format paysage pour la terrasse et la salle) : les photos actuelles proviennent d'Instagram (recadrées pour retirer les textes incrustés) ; certaines sont en 640–720 px de large.
 - [ ] **Témoignages clients** : aucun avis authentique n'était disponible, la section n'a donc pas été créée.
 - [ ] Envoyer `sitemap.xml` dans Google Search Console et créer/revendiquer la fiche Google Business Profile avec les mêmes informations (NAP identiques au site).
@@ -97,5 +97,4 @@ nom et slogan « Saveurs de la vie », concept (restaurant, lounge bar, pâtisse
 ## Crédits
 
 - Photos © L'Assiette Brazzaville.
-- Polices : Bodoni Moda et Jost (SIL Open Font License), auto-hébergées.
-- Le bandeau Instagram défilant est une adaptation CSS du composant *Marquee* de [Magic UI](https://magicui.design) (licence MIT, © Magic UI).
+- Police : Bodoni Moda (SIL Open Font License), auto-hébergée, pour le logotype uniquement ; police système pour le reste.

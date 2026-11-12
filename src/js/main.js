@@ -11,8 +11,6 @@
     addEventListener('scroll', onScroll, { passive: true }); onScroll();
   }
 
-  /* Hero entrance safety net: settle final state even if animations were throttled */
-  setTimeout(() => body.classList.add('hero-settled'), 2300);
 
   /* Mobile navigation */
   const toggle = d.querySelector('[data-nav-toggle]');
@@ -35,24 +33,13 @@
   d.querySelectorAll('[data-lang-switch]').forEach((a) => a.addEventListener('click', () => { try { localStorage.setItem('lang', a.dataset.langSwitch); } catch {} }));
   try { localStorage.setItem('lang', lang); } catch {}
 
-  /* Image + text reveal on scroll */
-  const reveals = d.querySelectorAll('.reveal, .fade-up');
+  /* Text and image reveal on scroll */
+  const reveals = d.querySelectorAll('.fade-up');
   if (reveals.length && 'IntersectionObserver' in window && !reduceMotion) {
     const io = new IntersectionObserver((entries) => entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: 0.15 });
     reveals.forEach((el) => io.observe(el));
   } else reveals.forEach((el) => el.classList.add('is-visible'));
 
-  /* Subtle parallax on full-bleed media (transform only, rAF-throttled) */
-  const px = [...d.querySelectorAll('[data-parallax]')];
-  if (px.length && !reduceMotion) {
-    let ticking = false;
-    const update = () => {
-      const vh = innerHeight;
-      px.forEach((el) => { const r = el.parentElement.getBoundingClientRect(); if (r.bottom < 0 || r.top > vh) return; const p = (r.top + r.height / 2 - vh / 2) / vh; el.style.transform = `translate3d(0, ${(-p * Number(el.dataset.parallax || .1) * 100).toFixed(2)}%, 0) scale(1.15)`; });
-      ticking = false;
-    };
-    addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(update); ticking = true; } }, { passive: true }); update();
-  }
 
   /* Mobile action bar: hide while scrolling down, show when scrolling up or near the top */
   const bar = d.querySelector('[data-action-bar]');

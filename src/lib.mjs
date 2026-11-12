@@ -51,5 +51,16 @@ export function icon(name, cls = '') {
   return `<svg class="icon${cls ? ' ' + cls : ''}" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${body}</svg>`;
 }
 
+/** Eiffel-tower glyph used as the "A" of the wordmark (drawn after the restaurant's own logo). */
+export const eiffel = (cls = '') => `<svg class="eiffel${cls ? ' ' + cls : ''}" viewBox="0 0 40 60" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20 0 21 7 22 14 24 14 24 16 22.5 16 25.5 30 29 30 29 32 26.5 32 34 52 40 60 31 60 Q20 42 9 60 L0 60 6 52 13.5 32 11 32 11 30 14.5 30 17.5 16 16 16 16 14 18 14 19 7Z"/><path fill="#fff" fill-opacity=".9" d="M17 22h6v1.2h-6zM15 40h10v1.3H15z"/></svg>`;
+
+/** Wordmark: L’A(tower)SSIETTE in small caps, optional tagline. Accessible name stays the plain restaurant name. */
+export function wordmark(site, { cls = '', tagline = true } = {}) {
+  const n = typo(site.name);
+  const i = n.search(/a/i);
+  const visual = i === -1 ? esc(n) : `${esc(n.slice(0, i))}${eiffel('wordmark__a')}${esc(n.slice(i + 1))}`;
+  return `<span class="wordmark${cls ? ' ' + cls : ''}"><span class="wordmark__name" aria-hidden="true">${visual}</span><span class="visually-hidden">${esc(site.name)}</span>${tagline ? `<span class="wordmark__tag">${esc(site.tagline)}</span>` : ''}</span>`;
+}
+
 export const waLink = (number, text) => `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
 export const telLink = (e164) => `tel:${e164}`;

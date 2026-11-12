@@ -282,5 +282,12 @@
     "title": "Your reservation",
     "empty": "Choose a date, a time and the number of guests.",
     "line": "{date} at {time}, {guests}"
+  },
+  "book": {
+    "eyebrow": "Reservations",
+    "heading": "Take a seat.",
+    "text": "Every day, 7:30 am to 11:30 pm. Quick replies on WhatsApp or by phone.",
+    "cta": "Book a table",
+    "strip": "The place, the plate, the glass"
   }
 }
